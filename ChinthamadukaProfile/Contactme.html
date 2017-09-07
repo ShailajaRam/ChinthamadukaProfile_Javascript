@@ -1,0 +1,62 @@
+<!Doctype html>
+<html>
+<head>
+	<title>ContactMe</title>
+	<!-- <script type="text/javascript" src="C:\Users\shail\Desktop\ChinthamadukaProfile\Jsfunction.js"></script> -->
+	
+</head>
+
+<body>
+<a href="C:\Users\shail\Desktop\ChinthamadukaProfile\Homepage.html">
+<img src="C:\Users\shail\Desktop\ChinthamadukaProfile\images\homelogo.svg" style="width: 50px;height: 50px" />
+</a>
+<h2 style ="color:blue;font-size: 20px">Let's Talk</h2>
+<p> If you would like to hear more about me drop  a message: </p>
+<br>
+<form action="">
+<fieldset style="height: 200px;width:300px">
+	<legend style="color: blue; font-weight: bold;font-size: 20px">Contact Details</legend>
+	<label color:> Full name : <br />
+	<input type="text" name ="Full name=" value="" id=txt1 required="required" /></label>  <br />
+	<label>Email : <br />
+	<input type="email" name ="Email" id="email1" required="required" /> </label><br />
+	<label >Message <br />
+	<textarea name ="contact " cols="20" rows ="4"></textarea></label> 
+	<input type="Submit" id="btnSubmit" value="Submit" style="font-size:15px;font-color: blue" onclick="fnOnClickSubmit()">
+	</fieldset>
+	</form>
+	<script type="text/javascript">
+	function fnOnClickSubmit() {
+
+		  var name = document.getElementById("txt1").value;
+          var email =document.getElementById("email1").value;
+          name = titleCase(name); 
+
+		  if (name > '' && email > ''){
+		  	var alertText ;
+		  	alertText = "Your name is :  " + name + "\n" + "Emailid is :  " + email + "\n" + "\n" + "\n" +   "Thanks for contacting me ";
+		  	alert(alertText);
+		  	//alert("Your name is : " + name + "Emailid is :" + email);
+	
+		  }
+		  else{
+		  		alert( "Enter required fields before Submit")
+		  }
+
+		
+		  function titleCase(str) {
+			   var splitStr = str.toLowerCase().split(' ');
+			   for (var i = 0; i < splitStr.length; i++) {
+			       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+			   }
+			   return splitStr.join(' '); 
+		}
+	
+
+	}
+
+	</script>
+
+
+</body>
+</html>

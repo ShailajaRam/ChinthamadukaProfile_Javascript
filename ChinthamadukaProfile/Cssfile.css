@@ -1,0 +1,91 @@
+h1{
+	 
+    font-family: 'Aclonica', sans-serif;
+    text-align: center;
+    font-size: 500%;
+       color: blue;
+    }
+   
+h2{
+   	font-family: "verdana";
+   	text-align: center;
+   	font-size: 200%;
+    font-style: oblique;
+   	color:blue;
+   }
+   
+div.myPicture {
+    position: relative;
+    left:600px;
+    width: 200px;
+    height: 200px;
+    border: 3px solid white;
+    border-radius: 20px;
+    margin: 10gvcfcf
+    px;
+}
+div.gallery {
+    margin: 35px;
+    /*border: 1px solid #ccc;*/
+    float: left;
+    width: 120px;
+
+}
+
+ div.myPicture1 {
+ 	position: relative;
+    left:10px;
+    width: 500px;
+    height: :350px;
+  
+ }
+ p.aboutMetext {
+ 	position: absolute;
+ 	top: 20px;
+    left:100px;
+    width: 300px;
+    height: :350px;
+  ;
+ }
+
+
+.container {
+  position: relative;
+   margin: 35px;
+     float: left;
+    width: 120px;
+
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.container:hover .overlay {
+  opacity: 0.6;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
